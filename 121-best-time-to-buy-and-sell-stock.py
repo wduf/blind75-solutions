@@ -3,7 +3,7 @@
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        ans, lo = 0, 100001
+        ans, lo = 0, prices[0]
         for p in prices:
             if p < lo: 
                 lo = min(lo, p)
