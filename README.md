@@ -1,3 +1,3 @@
 # blind75-solutions
 
-my solutions to the leetcode blind75 questions w/ percentiles
+These are my solutions to the LeetCode Blind75 questions with time and memory percentiles.
