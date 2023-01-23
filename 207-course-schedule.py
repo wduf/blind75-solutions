@@ -1,5 +1,5 @@
-# 73.55% time
-# 14.37% memory
+# 79.87% time
+# 38.51% memory
 
 class Solution:
     def canFinish(self, n: int, pre: List[List[int]]) -> bool:
