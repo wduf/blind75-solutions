@@ -25,16 +25,20 @@ class Solution:
                 mtx[r][c + 1] = 2
                 q_nxt.append((r, c + 1))
         
-        q_cur, q_nxt = deque([]), deque([])
+        q_cur, q_nxt = deque([]), deque([])  # q_cur: current rotten oranges, q_nxt: next rotten oranges
         # add rotten oranges to q
         for r in range(nr):
             for c in range(nc):
+                # add rotten orange to q_nxt
                 if mtx[r][c] == 2:
                     q_nxt.append((r, c))
         res = -1
+        # while more rotten oranges
         while q_nxt:
+            # add next rotten oranges to cur rotten oranges, prepare for new bunch of rotten oranges in q_nxt
             q_cur, q_nxt = q_nxt, deque([])
             res += 1
+            # go through all cur rotten oranges
             while q_cur:
                 r, c = q_cur.popleft()
                 f(r, c)
