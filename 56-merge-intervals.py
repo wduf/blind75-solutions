@@ -1,4 +1,4 @@
-# 88.82% time 
+# 90.86% time 
 # 25.32% time
 
 class Solution:
